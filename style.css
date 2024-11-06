@@ -234,3 +234,16 @@ h2.text-center {
         font-size: 1.2rem; /* Tamanho reduzido para dispositivos móveis */
     }
 }
+
+
+/* Tamanho padrão do texto no footer */
+footer p {
+    font-size: 1rem; /* Tamanho padrão para telas maiores */
+}
+
+/* Ajuste de tamanho para telas pequenas */
+@media (max-width: 576px) {
+    footer p {
+        font-size: 0.85rem; /* Tamanho reduzido para dispositivos móveis */
+    }
+}
