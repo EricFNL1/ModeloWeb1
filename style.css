@@ -67,10 +67,6 @@ header img {
     theme-icon{
         margin-top: -60px;
     }
-
-    h2{
-        font-size: 8px;
-    }
 }
 
 
@@ -225,5 +221,9 @@ body.dark-mode footer {
     .services-section .row {
         flex-direction: column; /* Coloca os cards em uma única coluna */
         align-items: center; /* Centraliza os cards */
+    }
+
+    h2{
+        font-size: 8px;
     }
 }
