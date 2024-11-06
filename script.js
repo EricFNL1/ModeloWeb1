@@ -18,3 +18,58 @@ themeToggleBtn.addEventListener('click', () => {
     // Salva a preferência do tema no localStorage
     localStorage.setItem('theme', isDarkMode ? 'light-mode' : 'dark-mode');
 });
+
+
+//Rolagem suave:
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+
+//voltar pra cima
+
+const backToTopBtn = document.getElementById('backToTop');
+
+// Mostrar o botão ao rolar a página
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopBtn.style.display = 'block';
+    } else {
+        backToTopBtn.style.display = 'none';
+    }
+});
+
+// Rolagem suave para o topo
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+
+//Leia-Mais
+
+const readMoreBtn = document.getElementById('readMoreBtn');
+const moreText = document.getElementById('moreText');
+
+readMoreBtn.addEventListener('click', () => {
+    if (moreText.style.display === 'none') {
+        moreText.style.display = 'inline';
+        readMoreBtn.textContent = 'Leia menos';
+    } else {
+        moreText.style.display = 'none';
+        readMoreBtn.textContent = 'Leia mais';
+    }
+});

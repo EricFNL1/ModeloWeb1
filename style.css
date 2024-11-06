@@ -247,3 +247,47 @@ footer p {
         font-size: 0.85rem; /* Tamanho reduzido para dispositivos móveis */
     }
 }
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+
+#readMoreBtn {
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+
+/* Personalização da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Cor do trilho da barra de rolagem */
+    border-radius: 10px; /* Arredonda o trilho */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333333; /* Cor da barra de rolagem */
+    border-radius: 10px; /* Arredonda a barra de rolagem */
+    border: 3px solid #f0f0f0; /* Espaço entre o trilho e a barra */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor da barra ao passar o mouse */
+}
