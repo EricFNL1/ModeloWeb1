@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Site Modelo</title>
+    <link rel="icon" href="img/logo/logu.png" type="image/x-icon">
+
+    <!-- Link do Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-3">
+        <img src="img/logo/logu.png" alt="">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle-btn">
+            <span id="theme-icon" class="material-icons">wb_sunny</span>
+        </button>
+    </header>
+
+    <!-- Main Section - Serviços -->
+    <main class="container my-5">
+        <section class="services-section">
+            <h2 class="text-center mb-5">Nossos Serviços</h2>
+    
+            <!-- Carrossel de Cards -->
+            <div id="servicesCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Card 1 -->
+                    <div class="carousel-item active">
+                        <div class="card service-card">
+                            <img src="img/servicos/servico1.webp" class="card-img-top" alt="Desenvolvimento de Sites e Sistemas">
+                            <div class="card-body">
+                                <h5 class="card-title">Desenvolvimento de Sites e Sistemas</h5>
+                                <p class="card-text">Criamos sites e sistemas completos, responsivos e personalizados para atender às necessidades específicas do seu negócio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="carousel-item">
+                        <div class="card service-card">
+                            <img src="img/servicos/servico2.webp" class="card-img-top" alt="Design Visual e Identidade">
+                            <div class="card-body">
+                                <h5 class="card-title">Design Visual e Identidade</h5>
+                                <p class="card-text">Desenvolvemos identidades visuais e designs atraentes, garantindo uma imagem forte e coerente para sua marca.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="carousel-item">
+                        <div class="card service-card">
+                            <img src="img/servicos/servico3.webp" class="card-img-top" alt="Manutenção e Hospedagem">
+                            <div class="card-body">
+                                <h5 class="card-title">Manutenção e Hospedagem</h5>
+                                <p class="card-text">Oferecemos manutenção e hospedagem para manter seu site seguro, atualizado, com alta performance e sempre disponível para acesso.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles do Carrossel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+    
+            <!-- Exibição padrão de cards em desktop -->
+            <div class="row d-none d-md-flex">
+                <!-- Serviço 1 -->
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="img/servicos/servico1.webp" class="card-img-top" alt="Desenvolvimento de Sites e Sistemas">
+                        <div class="card-body">
+                            <h5 class="card-title">Desenvolvimento de Sites e Sistemas</h5>
+                            <p class="card-text">Criamos sites e sistemas completos, responsivos e personalizados para atender às necessidades específicas do seu negócio.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Serviço 2 -->
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="img/servicos/servico2.webp" class="card-img-top" alt="Design Visual e Identidade">
+                        <div class="card-body">
+                            <h5 class="card-title">Design Visual e Identidade</h5>
+                            <p class="card-text">Desenvolvemos identidades visuais e designs atraentes, garantindo uma imagem forte e coerente para sua marca.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Serviço 3 -->
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="img/servicos/servico3.webp" class="card-img-top" alt="Manutenção e Hospedagem">
+                        <div class="card-body">
+                            <h5 class="card-title">Manutenção e Hospedagem</h5>
+                            <p class="card-text">Oferecemos manutenção e hospedagem para manter seu site seguro, atualizado, com alta performance e sempre disponível para acesso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/seu-numero" target="_blank" class="whatsapp-float">
+        <img src="img/whatsapp-icon.png" alt="WhatsApp" width="50" height="50">
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        <p><a href="#" class="text-white">Política de Privacidade</a> | <a href="#" class="text-white">Termos de Serviço</a></p>
+        <p id="contato"><a href="#" class="text-white">seuemail@email.com</a> | <a href="#" class="text-white">(19) 99999-9999</a></p>
+    </footer>
+
+    <!-- Link do Bootstrap JS e dependências -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

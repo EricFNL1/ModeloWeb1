@@ -64,7 +64,7 @@ header img {
         margin-top: 0px;
     }
 
-    #theme-icon{
+    theme-icon{
         margin-top: -60px;
     }
 }
@@ -142,3 +142,84 @@ body.dark-mode footer {
 
 
 
+
+/* About Us */
+
+/* Estilo para a seção "Sobre Nós" */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre texto e imagem */
+}
+
+.about-text {
+    flex: 1; /* Faz o texto ocupar o espaço disponível */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    width: 800px; /* Ajuste conforme necessário para o tamanho da imagem */
+}
+
+@media (max-width: 767px) {
+    .about-section {
+        flex-direction: column; /* Empilha texto e imagem em telas pequenas */
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%; /* Faz a imagem ocupar toda a largura no mobile */
+    }
+}
+
+/* Estilos adicionais para os cartões de serviço */
+.service-card {
+    border: none;
+    background-color: #f8f9fa; /* Fundo claro */
+    color: #333; /* Texto escuro */
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card img {
+    border-radius: 8px 8px 0 0;
+    max-width: 100%; /* Garante que a imagem não exceda a largura do card */
+    height: auto;
+}
+
+.service-card .card-title {
+    font-size: 1.25rem; /* Tamanho de fonte do título */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.service-card .card-text {
+    font-size: 0.95rem; /* Tamanho de fonte do texto */
+}
+
+/* Ajustes para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    .service-card {
+        margin-bottom: 20px; /* Espaço entre os cartões no celular */
+    }
+    
+    .service-card .card-title {
+        font-size: 1.1rem; /* Reduz o tamanho do título no celular */
+    }
+
+    .service-card .card-text {
+        font-size: 0.9rem; /* Reduz o tamanho do texto no celular */
+    }
+
+    .services-section .row {
+        flex-direction: column; /* Coloca os cards em uma única coluna */
+        align-items: center; /* Centraliza os cards */
+    }
+}
