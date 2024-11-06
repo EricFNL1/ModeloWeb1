@@ -229,7 +229,7 @@ h2.text-center {
 }
 
 /* Ajuste de tamanho para telas pequenas */
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     h2.text-center {
         font-size: 1.2rem; /* Tamanho reduzido para dispositivos móveis */
     }
