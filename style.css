@@ -222,8 +222,15 @@ body.dark-mode footer {
         flex-direction: column; /* Coloca os cards em uma única coluna */
         align-items: center; /* Centraliza os cards */
     }
+}
 
-    h2{
-        font-size: 8px;
+h2.text-center {
+    font-size: 2rem; /* Tamanho para telas maiores */
+}
+
+/* Ajuste de tamanho para telas pequenas */
+@media (max-width: 576px) {
+    h2.text-center {
+        font-size: 1.5rem; /* Tamanho reduzido para dispositivos móveis */
     }
 }
