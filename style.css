@@ -271,6 +271,21 @@ footer p {
     background: none;
 }
 
+/* Estilo inicial do conteúdo adicional */
+/* Estilo inicial do conteúdo adicional */
+.hidden-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease; /* Transição suave para o max-height */
+}
+
+/* Estilo quando o conteúdo está visível */
+.hidden-text.show {
+    max-height: 500px; /* Ajuste esse valor conforme o tamanho do conteúdo */
+}
+
+
+
 
 /* Personalização da barra de rolagem */
 ::-webkit-scrollbar {

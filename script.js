@@ -65,11 +65,11 @@ const readMoreBtn = document.getElementById('readMoreBtn');
 const moreText = document.getElementById('moreText');
 
 readMoreBtn.addEventListener('click', () => {
-    if (moreText.style.display === 'none') {
-        moreText.style.display = 'inline';
-        readMoreBtn.textContent = 'Leia menos';
-    } else {
-        moreText.style.display = 'none';
+    if (moreText.classList.contains('show')) {
+        moreText.classList.remove('show');
         readMoreBtn.textContent = 'Leia mais';
+    } else {
+        moreText.classList.add('show');
+        readMoreBtn.textContent = 'Leia menos';
     }
 });
